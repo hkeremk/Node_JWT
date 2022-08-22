@@ -50,6 +50,7 @@ app.post("/api/login", (req,res) => {
         next();
      }else{
          // Forbidden 
+         next();
          res.sendStatus(403);
      }
  }
